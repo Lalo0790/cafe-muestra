@@ -1,55 +1,171 @@
-<!doctype html><html lang="es-MX"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#8a4b2a">
-<title>Café Tostado Lento — Café de especialidad (sitio de muestra)</title><style>
-:root{--a:#8a4b2a;--a2:#d9a066;--bg:#f8f2ea;--d:#2b1c14;--m:#6b6461}*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,system-ui,Segoe UI,Roboto,sans-serif;color:var(--d);background:#fff;line-height:1.55}
-.demo{background:var(--d);color:#fff;font-size:.75rem;text-align:center;padding:6px 12px;opacity:.9}
-.w{max-width:1080px;margin:0 auto;padding:0 20px}h1,h2,.logo{font-family:'Playfair Display',Georgia,serif}
-header{position:sticky;top:0;background:#ffffffe0;backdrop-filter:blur(14px);border-bottom:1px solid #0000000d;z-index:5}
-header .w{display:flex;align-items:center;justify-content:space-between;height:60px}.logo{font-weight:700;font-size:1.15rem;color:var(--d);text-decoration:none}.logo b{color:var(--a)}
-nav a{color:var(--m);text-decoration:none;font-size:.9rem;margin-left:22px}nav a:hover{color:var(--a)}@media(max-width:760px){nav{display:none}}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--a);color:#fff;text-decoration:none;font-weight:600;padding:14px 24px;border-radius:999px;border:0;font-size:1rem;cursor:pointer;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px -8px var(--a)}.btn.s{background:#fff;color:var(--d);border:1px solid #0000001a}
-.hero{position:relative;overflow:hidden;padding:80px 0 70px;background:radial-gradient(1200px 500px at 85% -10%,color-mix(in srgb,var(--a2) 40%,transparent),transparent 60%),var(--bg)}
-.hero .w{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}@media(max-width:820px){.hero .w{grid-template-columns:1fr}.hero{padding:48px 0}}
-.kick{display:inline-block;color:var(--a);font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;background:#fff;padding:6px 12px;border-radius:999px}
-h1{font-size:clamp(2.3rem,7vw,4rem);line-height:1.04;letter-spacing:-.02em;margin:16px 0}h1 em{color:var(--a)}
-.lead{color:var(--m);font-size:1.1rem;max-width:520px;margin:0 0 28px}.cta{display:flex;gap:10px;flex-wrap:wrap}
-.art{aspect-ratio:4/5;border-radius:200px 200px 28px 28px;background:linear-gradient(160deg,var(--a2),var(--a));position:relative;box-shadow:0 40px 80px -30px var(--a);display:grid;place-items:center;font-size:7rem}
-.art:after{content:"";position:absolute;inset:14px;border:1.5px solid #ffffff80;border-radius:186px 186px 18px 18px}
-.stats{display:flex;gap:28px;margin-top:30px;flex-wrap:wrap}.stats b{display:block;font-size:1.5rem;color:var(--d)}.stats span{font-size:.82rem;color:var(--m)}
-section{padding:72px 0}h2{font-size:clamp(1.8rem,5vw,2.6rem);letter-spacing:-.01em;margin:0 0 8px}.sub{color:var(--m);margin:0 0 32px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.card{background:var(--bg);border-radius:24px;padding:24px;transition:transform .25s}.card:hover{transform:translateY(-4px)}.card i{font-style:normal;font-size:1.8rem}.card h3{margin:8px 0 12px}
-.card ul{list-style:none;margin:0;padding:0}.card li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px dashed #00000018;font-size:.94rem}.card li b{color:var(--a);white-space:nowrap}
-.note{font-size:.8rem;color:var(--m);margin-top:14px}
-.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}@media(max-width:640px){.gal{grid-template-columns:repeat(2,1fr)}}
-.gal figure{margin:0;aspect-ratio:1;border-radius:22px;position:relative;overflow:hidden}.gal figure:nth-child(1){grid-row:span 2;aspect-ratio:auto}
-.gal figure:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,#ffffff55,transparent 50%)}
-.gal figcaption{position:absolute;left:12px;bottom:12px;background:#ffffffe6;padding:5px 11px;border-radius:999px;font-size:.8rem;font-weight:600}
-.tst{background:var(--d);color:#fff}.tst .sub{color:#ffffffaa}.tst .grid{gap:14px}
-blockquote{margin:0;background:#ffffff10;border:1px solid #ffffff1a;border-radius:22px;padding:24px;color:var(--a2)}blockquote p{color:#fff;margin:10px 0}cite{font-style:normal;font-size:.9rem;color:#ffffffcc}cite small{opacity:.6}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}@media(max-width:820px){.two{grid-template-columns:1fr}}
-form{background:var(--bg);border-radius:24px;padding:26px;display:grid;gap:12px}label{font-size:.85rem;font-weight:600}
-input,select,textarea{width:100%;font:inherit;padding:13px 14px;border-radius:14px;border:1px solid #00000018;background:#fff;margin-top:4px}
-iframe{width:100%;height:100%;min-height:300px;border:0;border-radius:24px}.info p{margin:6px 0;color:var(--m)}
-footer{padding:34px 0 90px;text-align:center;color:var(--m);font-size:.85rem;border-top:1px solid #0000000d}footer b{color:var(--d)}
-.fab{position:fixed;right:18px;bottom:18px;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px -6px #25d366;z-index:9;animation:p 2.4s infinite}
-@keyframes p{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}.fab svg{width:32px;fill:#fff}
-</style></head><body>
-<div class="demo">Sitio de muestra · negocio ficticio</div>
-<header><div class="w"><a class="logo" href="#">Café <b>Tostado Lento</b></a><nav><a href="#servicios">Menú</a><a href="#galeria">Galería</a><a href="#opiniones">Opiniones</a><a href="#reserva">Reservar</a></nav></div></header>
-<section class="hero"><div class="w"><div><span class="kick">Café de especialidad en la Roma</span><h1>Café de origen, <em>hecho con calma.</em></h1><p class="lead">Granos de Chiapas, Veracruz y Oaxaca tostados en casa. Desayunos de verdad y postres horneados cada mañana.</p>
-<div class="cta"><a class="btn" href="#reserva">Reservar mesa</a><a class="btn s" href="https://wa.me/5215521128404?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20hacer%20un%20pedido%20/%20reservar%20mesa%20en%20Caf%C3%A9%20Tostado%20Lento%20%E2%98%95" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div>
-<div class="stats"><div><b>4.9★</b><span>calificación</span></div><div><b>+1,200</b><span>clientes felices</span></div><div><b>8 años</b><span>de experiencia</span></div></div></div>
-<div class="art">☕</div></div></section>
-<section id="servicios"><div class="w"><h2>Nuestro menú</h2><p class="sub">Café de especialidad · precios de ejemplo en MXN</p><div class="grid"><div class='card'><i>☕</i><h3>Bebidas calientes</h3><ul><li><span>Espresso</span><b>$45</b></li><li><span>Americano</span><b>$50</b></li><li><span>Cappuccino</span><b>$65</b></li><li><span>Latte</span><b>$68</b></li><li><span>Chocolate oaxaqueño</span><b>$70</b></li><li><span>Método V60</span><b>$85</b></li></ul></div><div class='card'><i>🧊</i><h3>Bebidas frías</h3><ul><li><span>Cold brew</span><b>$75</b></li><li><span>Iced latte</span><b>$72</b></li><li><span>Frappé moka</span><b>$85</b></li><li><span>Matcha frío</span><b>$80</b></li></ul></div><div class='card'><i>🍳</i><h3>Desayunos</h3><ul><li><span>Chilaquiles verdes</span><b>$145</b></li><li><span>Molletes</span><b>$110</b></li><li><span>Huevos al gusto</span><b>$120</b></li><li><span>Hot cakes</span><b>$115</b></li><li><span>Avocado toast</span><b>$135</b></li></ul></div><div class='card'><i>🍰</i><h3>Postres</h3><ul><li><span>Concha rellena</span><b>$55</b></li><li><span>Cheesecake</span><b>$85</b></li><li><span>Brownie</span><b>$60</b></li><li><span>Pay de limón</span><b>$75</b></li><li><span>Rol de canela</span><b>$58</b></li></ul></div></div><p class="note">*Precios ilustrativos para este sitio de muestra.</p></div></section>
-<section id="galeria" style="padding-top:0"><div class="w"><h2>Galería</h2><p class="sub">Un vistazo a lo que hacemos.</p><div class="gal"><figure style='background:linear-gradient(135deg,#d9a066,#8a4b2a)'><figcaption>Latte art</figcaption></figure><figure style='background:linear-gradient(135deg,#3b2a20,#8a4b2a)'><figcaption>Barra</figcaption></figure><figure style='background:linear-gradient(135deg,#9bc27a,#4f7a3a)'><figcaption>Chilaquiles</figcaption></figure><figure style='background:linear-gradient(135deg,#f2d2a0,#c2843f)'><figcaption>Pan del día</figcaption></figure><figure style='background:linear-gradient(135deg,#f6e6d0,#a8835f)'><figcaption>Terraza</figcaption></figure><figure style='background:linear-gradient(135deg,#2b1c14,#6b4430)'><figcaption>Cold brew</figcaption></figure></div></div></section>
-<section id="opiniones" class="tst"><div class="w"><h2>Lo que dicen</h2><p class="sub">Testimonios ficticios de ejemplo.</p><div class="grid"><blockquote>★★★★★<p>“El mejor cold brew de la colonia, y los chilaquiles 10/10.”</p><cite>— Fernanda G. <small>(testimonio ficticio)</small></cite></blockquote><blockquote>★★★★★<p>“Ideal para trabajar: buen wifi, café increíble.”</p><cite>— Jorge M. <small>(testimonio ficticio)</small></cite></blockquote><blockquote>★★★★★<p>“Pedí para llevar por WhatsApp y estaba listo al llegar.”</p><cite>— Paola S. <small>(testimonio ficticio)</small></cite></blockquote></div></div></section>
-<section id="reserva"><div class="w two"><div><h2>Reserva o pide</h2><p class="sub">Llena el formulario y te confirmamos por WhatsApp.</p>
-<form onsubmit="event.preventDefault();var f=this;location.href='https://wa.me/5215521128404?text='+encodeURIComponent('Hola, soy '+f.n.value+'. Quiero: '+f.s.value+' el '+f.f.value+' a las '+f.h.value+'. '+f.c.value)">
-<label>Nombre<input name="n" required placeholder="Tu nombre"></label><label>Servicio<select name="s"><option>Reservar mesa</option><option>Pedido para llevar</option><option>Evento / grupo</option></select></label>
-<div class="two" style="gap:12px"><label>Fecha<input name="f" type="date" required></label><label>Hora<input name="h" type="time" required></label></div>
-<label>Comentarios<textarea name="c" rows="3" placeholder="Opcional"></textarea></label><button class="btn" type="submit">Enviar por WhatsApp</button></form></div>
-<div class="info"><iframe loading="lazy" title="Mapa" src="https://www.google.com/maps?q=Roma%20Norte%2C%20Ciudad%20de%20M%C3%A9xico&output=embed"></iframe><p><b>📍</b> Calle Ejemplo 78, Roma Norte, CDMX</p><p><b>🕒</b> Lun–Vie 7:30–20:00 · Sáb–Dom 8:30–18:00</p><p><b>📱</b> 55 2112 8404</p></div></div></section>
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#6b3f28">
+<title>Café Tostado Lento · Roma Norte (muestra)</title>
+<meta name="description" content="Café de origen, desayunos y pan del día. Pide o reserva por WhatsApp. Sitio de muestra.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero.webp">
+<style>
+:root{--bean:#6b3f28;--bean2:#52301e;--cream:#f7f0e6;--paper:#faf6f0;--ink:#241910;--mute:#6a5c50;--line:#e4d7c7;--disp:"Libre Baskerville",Georgia,serif;--sans:"Source Sans 3",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}a{color:inherit;text-decoration:none}figure{margin:0}
+.w{max-width:1140px;margin:0 auto;padding:0 clamp(18px,4vw,36px)}
+.demo{background:var(--ink);color:#e8dccf;font-size:.72rem;letter-spacing:.04em;text-align:center;padding:8px 14px}
+.demo b{color:#fff}
+header{position:sticky;top:0;z-index:20;background:rgba(250,246,240,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:700 1.05rem/1.1 var(--disp)}.logo em{font-style:italic;font-weight:400;color:var(--bean)}
+nav{display:flex;gap:22px;align-items:center;font-size:.92rem;color:var(--mute)}
+nav .cta{background:var(--bean);color:#fff;padding:9px 16px;border-radius:8px;font-weight:600;font-size:.85rem}
+@media(max-width:820px){nav a:not(.cta){display:none}}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--bean);color:#fff;font-weight:700;padding:14px 22px;border-radius:8px;border:0;font:700 .95rem var(--sans);cursor:pointer}
+.btn:hover{background:var(--bean2)}.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.hero{padding:48px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:36px;align-items:center}
+.k{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--bean);font-weight:700;margin:0 0 14px}
+h1{font:700 clamp(2.2rem,5.2vw,3.6rem)/1.15 var(--disp);margin:0 0 16px}
+h1 em{font-style:italic;font-weight:400;color:var(--bean)}
+.lead{color:var(--mute);font-size:1.1rem;max-width:32em;margin:0 0 26px}
+.ctas{display:flex;gap:10px;flex-wrap:wrap}
+.hf{aspect-ratio:5/4;border-radius:10px;overflow:hidden;box-shadow:0 28px 60px -32px #6b3f2888}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}
+.chips span{background:var(--cream);border:1px solid var(--line);padding:7px 12px;border-radius:999px;font-size:.85rem;color:var(--mute)}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}}
+section{padding:80px 0}h2{font:700 clamp(1.8rem,3.8vw,2.6rem)/1.15 var(--disp);margin:0 0 8px}
+h2 em{font-style:italic;font-weight:400;color:var(--bean)}.sub{color:var(--mute);margin:0 0 32px}
+.menu{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}@media(max-width:720px){.menu{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.card .ph{height:170px}.card .body{padding:18px}
+.card h3{font:700 1.15rem var(--disp);margin:0 0 12px}
+.card ul{list-style:none;margin:0;padding:0}
+.card li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-top:1px dashed var(--line);font-size:.93rem}
+.card li:first-child{border:0}.card li b{color:var(--bean);white-space:nowrap}
+.note{font-size:.8rem;color:var(--mute);margin-top:12px}
+.strip{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:12px;margin-top:12px}
+.strip figure{border-radius:10px;overflow:hidden;height:240px;position:relative}
+.strip figcaption{position:absolute;left:10px;bottom:10px;background:rgba(250,246,240,.93);padding:5px 10px;border-radius:6px;font-size:.78rem;font-weight:600}
+@media(max-width:720px){.strip{grid-template-columns:1fr}.strip figure{height:200px}}
+.tst{background:var(--ink);color:#f3ebe2}.tst .sub{color:#b5a497}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}@media(max-width:800px){.quotes{grid-template-columns:1fr}}
+blockquote{margin:0;background:#ffffff0c;border:1px solid #ffffff18;border-radius:12px;padding:20px;font:italic 400 1.05rem/1.5 var(--disp)}
+blockquote cite{display:block;margin-top:12px;font:600 .85rem var(--sans);font-style:normal;color:#c4b3a4}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}@media(max-width:860px){.two{grid-template-columns:1fr}}
+form{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;display:grid;gap:12px}
+label{font-size:.82rem;font-weight:600;display:grid;gap:5px}
+input,select,textarea{font:inherit;padding:12px;border-radius:8px;border:1px solid var(--line);background:var(--cream)}
+.info{background:var(--cream);border-radius:12px;overflow:hidden}
+.info iframe{width:100%;height:250px;border:0;display:block}
+.info .meta{padding:14px 16px 18px}.info p{margin:6px 0;color:var(--mute)}.info b{color:var(--ink)}
+footer{padding:28px 0 96px;border-top:1px solid var(--line);text-align:center;color:var(--mute);font-size:.84rem}footer b{color:var(--ink)}
+.fab{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 28px -8px #25d366aa;z-index:30}
+.fab svg{width:30px;fill:#fff}
+</style>
+</head>
+<body>
+<div class="demo">Sitio de muestra · negocio ficticio · preparado por <b>Eduardo García Soluciones</b></div>
+<header><div class="w">
+  <a class="logo" href="#">Café <em>Tostado Lento</em></a>
+  <nav>
+    <a href="#menu">Menú</a>
+    <a href="#galeria">Galería</a>
+    <a href="#opiniones">Opiniones</a>
+    <a class="cta" href="https://wa.me/5215521128404?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20reservar%20mesa%20o%20pedir%20para%20llevar%20en%20Caf%C3%A9%20Tostado%20Lento" target="_blank" rel="noopener">Pedir / reservar</a>
+  </nav>
+</div></header>
+
+<section class="w hero"><div class="hero-grid">
+  <div>
+    <p class="k">Café de especialidad · Roma Norte</p>
+    <h1>Café de origen, <em>hecho con calma.</em></h1>
+    <p class="lead">Granos de Chiapas, Veracruz y Oaxaca tostados en casa. Desayunos de verdad y pan horneado cada mañana. Pide para llevar o reserva mesa por WhatsApp.</p>
+    <div class="ctas">
+      <a class="btn" href="#reserva">Reservar mesa</a>
+      <a class="btn ghost" href="https://wa.me/5215521128404?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20reservar%20mesa%20o%20pedir%20para%20llevar%20en%20Caf%C3%A9%20Tostado%20Lento" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    </div>
+    <div class="chips">
+      <span>Abierto desde las 7:30</span>
+      <span>WiFi para trabajar</span>
+      <span>Pedidos listos al llegar</span>
+    </div>
+  </div>
+  <figure class="hf"><img src="img/hero.webp" alt="Tazas de café con latte art en la mesa"></figure>
+</div></section>
+
+<section id="menu"><div class="w">
+  <h2>Nuestro <em>menú</em></h2>
+  <p class="sub">Precios de ejemplo en MXN. Cambia según temporada y tamaño.</p>
+  <div class="menu">
+    <article class="card"><div class="ph"><img src="img/barista.webp" alt="Barista preparando café" loading="lazy"></div><div class="body"><h3>Bebidas calientes</h3><ul>
+      <li><span>Espresso</span><b>$45</b></li><li><span>Americano</span><b>$50</b></li><li><span>Cappuccino</span><b>$65</b></li>
+      <li><span>Latte</span><b>$68</b></li><li><span>Chocolate oaxaqueño</span><b>$70</b></li><li><span>Método V60</span><b>$85</b></li>
+    </ul></div></article>
+    <article class="card"><div class="ph"><img src="img/barra.webp" alt="Interior del café" loading="lazy"></div><div class="body"><h3>Bebidas frías</h3><ul>
+      <li><span>Cold brew</span><b>$75</b></li><li><span>Iced latte</span><b>$72</b></li><li><span>Frappé moka</span><b>$85</b></li><li><span>Matcha frío</span><b>$80</b></li>
+    </ul></div></article>
+    <article class="card"><div class="ph"><img src="img/desayuno.webp" alt="Desayuno en el café" loading="lazy"></div><div class="body"><h3>Desayunos</h3><ul>
+      <li><span>Chilaquiles verdes</span><b>$145</b></li><li><span>Molletes</span><b>$110</b></li><li><span>Huevos al gusto</span><b>$120</b></li>
+      <li><span>Hot cakes</span><b>$115</b></li><li><span>Avocado toast</span><b>$135</b></li>
+    </ul></div></article>
+    <article class="card"><div class="ph"><img src="img/pan.webp" alt="Pan fresco del día" loading="lazy"></div><div class="body"><h3>Postres y pan</h3><ul>
+      <li><span>Concha rellena</span><b>$55</b></li><li><span>Cheesecake</span><b>$85</b></li><li><span>Brownie</span><b>$60</b></li>
+      <li><span>Pay de limón</span><b>$75</b></li><li><span>Rol de canela</span><b>$58</b></li>
+    </ul></div></article>
+  </div>
+  <p class="note">*Precios ilustrativos de este sitio de muestra.</p>
+</div></section>
+
+<section id="galeria" style="padding-top:0"><div class="w">
+  <h2>El lugar</h2>
+  <p class="sub">Fotos de referencia; en el sitio real van las del café.</p>
+  <div class="strip">
+    <figure><img src="img/terraza.webp" alt="Mesas del café" loading="lazy"><figcaption>Terraza / mesas</figcaption></figure>
+    <figure><img src="img/granos.webp" alt="Granos de café" loading="lazy"><figcaption>Granos de origen</figcaption></figure>
+    <figure><img src="img/barra.webp" alt="Barra" loading="lazy"><figcaption>La barra</figcaption></figure>
+  </div>
+</div></section>
+
+<section id="opiniones" class="tst"><div class="w">
+  <h2>Lo que dicen</h2>
+  <p class="sub">Opiniones de ejemplo.</p>
+  <div class="quotes">
+    <blockquote>“El mejor cold brew de la colonia, y los chilaquiles 10/10.”<cite>— Fernanda G.</cite></blockquote>
+    <blockquote>“Ideal para trabajar: buen wifi y café de verdad.”<cite>— Jorge M.</cite></blockquote>
+    <blockquote>“Pedí para llevar por WhatsApp y estaba listo al llegar.”<cite>— Paola S.</cite></blockquote>
+  </div>
+</div></section>
+
+<section id="reserva"><div class="w two">
+  <div>
+    <h2>Reserva o <em>pide</em></h2>
+    <p class="sub">Te confirmamos por WhatsApp en cuanto recibamos el mensaje.</p>
+    <form onsubmit="event.preventDefault();var f=this;location.href='https://wa.me/5215521128404?text='+encodeURIComponent('Hola, soy '+f.n.value+'. Quiero: '+f.s.value+' el '+f.f.value+' a las '+f.h.value+'. '+f.c.value)">
+      <label>Nombre<input name="n" required placeholder="Tu nombre"></label>
+      <label>Qué necesitas<select name="s"><option>Reservar mesa</option><option>Pedido para llevar</option><option>Evento / grupo</option></select></label>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <label>Fecha<input name="f" type="date" required></label>
+        <label>Hora<input name="h" type="time" required></label>
+      </div>
+      <label>Detalle<textarea name="c" rows="3" placeholder="Mesa para cuántas personas, o qué quieres pedir"></textarea></label>
+      <button class="btn" type="submit">Enviar por WhatsApp</button>
+    </form>
+  </div>
+  <div class="info">
+    <iframe loading="lazy" title="Mapa Roma Norte" src="https://www.google.com/maps?q=Roma+Norte,+Ciudad+de+M%C3%A9xico&output=embed"></iframe>
+    <div class="meta">
+      <p><b>Dirección de ejemplo:</b> Calle Álvaro Obregón 100, Roma Norte, CDMX</p>
+      <p><b>Horario:</b> Lun–Vie 7:30–20:00 · Sáb–Dom 8:30–18:00</p>
+      <p><b>WhatsApp:</b> 55 2112 8404</p>
+    </div>
+  </div>
+</div></section>
+
 <footer><div class="w"><b>Café Tostado Lento</b> · negocio ficticio<br>Sitio de muestra por <b>Eduardo García Soluciones</b></div></footer>
-<a class="fab" href="https://wa.me/5215521128404?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20hacer%20un%20pedido%20/%20reservar%20mesa%20en%20Caf%C3%A9%20Tostado%20Lento%20%E2%98%95" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.7-.5z"/></svg></a>
+<a class="fab" href="https://wa.me/5215521128404?text=Hola%2C%20vi%20su%20sitio%20y%20quiero%20reservar%20mesa%20o%20pedir%20para%20llevar%20en%20Caf%C3%A9%20Tostado%20Lento" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.7-.5z"/></svg></a>
 </body></html>
